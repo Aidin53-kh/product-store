@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+
+@import "./css/navbar.css";
+@import "./css/reactToastify.css";
+@import "./css/fonts.css";
+@import "./css/sidebar.css";
+@import "./css/productDetails.css";
+@import "./css/productCard.css";
+@import "./css/adminPanel.css";
+
+@tailwind utilities;
+
+@layer base {
+    *:not(.samim-bold):not(.material-icons) {
+        @apply font-["Samim"];
+    }
+}
+
+@layer utilities {
+    .rc-anchor {
+        @apply bg-[#f1f1f1];
+    }
+
+    .dark .rc-anchor {
+        @apply bg-[#666];
+    }
+
+    .step-box {
+        @apply absolute -top-1/2 left-5 flex justify-center items-center flex-col;
+    }
+
+    .float-box {
+        @apply absolute flex justify-center items-center flex-col;
+    }
+}

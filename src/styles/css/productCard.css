@@ -1,0 +1,24 @@
+.product-card-icons {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    right: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), #0000);
+    transition: 450ms;
+}
+
+.product-card-icons .material-icons {
+    transition: 100ms;
+}
+
+.product-card-icons .material-icons:hover {
+    transform: scale(1.2);
+}
+
+.dark .product-card-icons {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #0000);
+}
+
+.product-card:hover .product-card-icons {
+    top: 0 !important;
+}

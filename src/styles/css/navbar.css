@@ -1,0 +1,25 @@
+.main-nav, .main-nav .content {
+    height: var(--navbar-height);
+}
+
+.main-nav {
+    backdrop-filter: blur(14.8px);
+    background: rgba(255, 255, 255, 0.8) !important;
+}
+
+.dark .main-nav {
+    backdrop-filter: blur(14.8px);
+    background: rgba(31, 41, 55, 0.8) !important;
+}
+
+.dark .main-nav .main-nav-list .active {
+    color: rgb(147, 197, 253);
+}
+
+.main-nav .main-nav-list .active {
+    color: rgb(96, 165, 250);
+}
+
+.main-nav .logo img  {
+    width: 60%;
+}
