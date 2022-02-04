@@ -1,19 +1,19 @@
-/* @font-face {
+ @font-face {
 	font-family: 'Samim';
-	src: url('../fonts/Samim-FD.ttf');
+	src: url('./../../../public/fonts/Samim-FD.ttf');
 }
 
 @font-face {
 	font-family: 'Samim-Bold';
-	src: url('../fonts/Samim-Bold-FD.ttf');
+	src: url('./../../../public/fonts/Samim-Bold-FD.ttf');
 }
 
 @font-face {
 	font-family: 'Material Icons';
 	font-style: normal;
 	font-weight: 400;
-	src: url('./../fonts/material-icons.woff2') format('woff2');
-} */
+	src: url('./../../../public/fonts/material-icons.woff2') format('woff2');
+}
 
 .material-icons {
 	font-family: 'Material Icons';

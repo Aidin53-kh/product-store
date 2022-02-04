@@ -1,3 +1,7 @@
+:root {
+    --navbar-height: 58px;
+}
+
 @tailwind base;
 @tailwind components;
 
@@ -11,13 +15,35 @@
 
 @tailwind utilities;
 
+@screen md {
+    .samim::placeholder, .samim input::placeholder {
+        @apply text-[14px];
+    }
+}
+
 @layer base {
+    * {
+        @apply border-gray-200 dark:border-gray-700;
+    }
+
     *:not(.samim-bold):not(.material-icons) {
         @apply font-["Samim"];
+    }
+
+    input, textarea {
+        @apply text-gray-800 dark:text-gray-100;
+    }
+
+    input::placeholder, textarea::placeholder {
+        @apply text-gray-300 dark:text-gray-500
     }
 }
 
 @layer utilities {
+    ._container {
+        @apply mx-auto px-0 sm:px-3 3xl:px-2 sm:max-w-xl md:max-w-3xl xl:max-w-4xl 2xl:max-w-3xl 3xl:max-w-4xl 4xl:max-w-5xl 5xl:max-w-6xl
+    }
+
     .rc-anchor {
         @apply bg-[#f1f1f1];
     }
@@ -32,5 +58,121 @@
 
     .float-box {
         @apply absolute flex justify-center items-center flex-col;
+    }
+
+    .para {
+        @apply leading-7 text-gray-900 text-sm dark:text-gray-300
+    }
+
+    .truncate {
+        @apply whitespace-nowrap overflow-hidden overflow-ellipsis;
+    }
+
+    .my-container {
+        @apply mx-auto sm:max-w-2xl md:max-w-3xl px-2 sm:px-3 md:px-4 2xl:max-w-4xl 3xl:max-w-5xl 6xl:max-w-6xl; 
+    }
+
+    .product-group {
+        @apply grid grid-cols-2 gap-2 md:gap-3 lg:gap-4 md:grid-cols-3 2xl:grid-cols-4 5xl:grid-cols-5;
+    }
+
+    .base-bg-900 {
+        @apply bg-gray-50 dark:bg-gray-900;
+    }
+
+    .base-bg-800 {
+        @apply bg-white dark:bg-gray-800;
+    }
+
+    .base-bg-700 {
+            @apply bg-white dark:bg-gray-700;
+        }
+
+    .base-bg-600 {
+        @apply bg-white dark:bg-gray-600;
+    }
+
+    .base-bg-500 {
+        @apply bg-white dark:bg-gray-500;
+    }
+
+    .base-bg-blue {
+        @apply bg-blue-500 dark:bg-blue-400;
+    }
+
+    .base-bg-green {
+        @apply bg-green-500 dark:bg-green-400;
+    }
+
+    .base-bg-red {
+        @apply bg-red-500 dark:bg-red-400;
+    }
+
+    .base-text-blue {
+        @apply text-blue-500 dark:text-blue-400;
+    }
+
+    .base-text-green {
+        @apply text-green-500 dark:text-green-400;
+    }
+
+    .base-text-red {
+        @apply text-red-500 dark:text-red-400;
+    }
+
+    .base-text-900 {
+        @apply text-gray-900 dark:text-gray-50;
+    }
+
+    .base-text-800 {
+        @apply text-gray-800 dark:text-gray-200;
+    }
+
+    .base-text-700 {
+        @apply text-gray-700 dark:text-gray-300;
+    }
+
+    .base-text-600 {
+        @apply text-gray-600 dark:text-gray-400;
+    }
+
+    .base-text-500 {
+        @apply text-gray-500;
+    }
+
+    .rtl {
+        direction: rtl !important;
+    }
+
+    .ltr {
+        direction: ltr !important;
+    }
+
+    .samim-bold {
+        font-family: Samim-Bold !important;
+    }
+
+    .samim {
+        font-family: Samim !important;
+    }
+
+    .samim::placeholder, .samim input::placeholder {
+        font-size: 12px !important;
+    }
+
+    .shadow-blue {
+        box-shadow: 0 10px 20px rgba(59, 130, 246, .3);
+    }
+
+    .shadow-red {
+        box-shadow: 0 10px 20px rgba(239, 68, 68, .3);
+    }
+
+    .shadow-green {
+        box-shadow: 0 10px 20px rgba(16, 185, 129, .3);
+    }
+
+    .shadow-yellow {
+        box-shadow: 0 10px 20px rgba(245, 158, 11, .3);
     }
 }
