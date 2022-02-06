@@ -11,10 +11,12 @@ export interface Product {
 	group: string;
 	categorie: string;
 	details: string;
-    createdAt?: string|undefined;
-	_id?: string|undefined;
-	user?: string|undefined;
+    createdAt: string;
+	_id: string;
+	user: string;
 }
+
+export type IProduct = Product;
 
 interface SetProduct {
 	type: ActionTypes.SET_PRODUCT;

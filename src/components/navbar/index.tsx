@@ -8,6 +8,8 @@ import { isEmpty } from "lodash";
 import { User } from "../../store/user/types";
 import { State } from "../../store";
 import { listItemVariants, listVariants, logoVariants } from "./variants";
+import FloatSidebar from "../sidebar/FloatSidebar";
+import SidebarList from "../sidebar/SidebarList";
 
 const Navbar = () => {
 
@@ -19,9 +21,9 @@ const Navbar = () => {
     
     return (  
         <nav className="main-nav px-2 sm:px-0 z-50 block sticky border-b base-bg-800 top-0">
-            {/* <FloatSidebar open={openFloatSidebar} setOpen={setOpenFloatSidebar}>
+            <FloatSidebar open={openFloatSidebar} setOpen={setOpenFloatSidebar}>
                 <SidebarList sidebarIsOpen={true} />
-            </FloatSidebar> */}
+            </FloatSidebar>
 
             <div className="_container">
                 <div className="content flex items-center justify-between">

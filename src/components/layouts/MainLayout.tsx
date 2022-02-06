@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from '../navbar';
+import Sidebar from '../sidebar';
 
 const MainLayout: React.FC = ({ children }) => {
 	return (
@@ -8,7 +9,7 @@ const MainLayout: React.FC = ({ children }) => {
 				<Navbar />
 				<div>{children}</div>
 			</div>
-			{/* <Sidebar/> */}
+			<Sidebar />
 		</div>
 	);
 };

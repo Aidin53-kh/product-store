@@ -1,5 +1,5 @@
 import { errorMessage } from './../utils/messages';
-import axios, { AxiosRequestConfig, AxiosRequestHeaders } from 'axios';
+import axios, { AxiosRequestHeaders } from 'axios';
 
 axios.interceptors.request.use((req) => {
 	const token = localStorage.getItem("token") || sessionStorage.getItem("token");

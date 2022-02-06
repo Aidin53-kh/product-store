@@ -1,3 +1,4 @@
+import { filtersReducer } from './filters/reducer';
 import { applyMiddleware, combineReducers, compose, createStore } from "redux";
 import thunk from "redux-thunk";
 import { productReducer } from "./product/reducer";
@@ -9,6 +10,7 @@ const reducers = combineReducers({
     user: userReducer,
     product: productReducer,
     products: productsReducer,
+    filters: filtersReducer,
 });
 
 export const store = createStore(
